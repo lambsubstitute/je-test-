@@ -57,3 +57,9 @@ def closedRestaurantsNotPresent
   present = results.closedRestaurantsPresent?
   present.should == (false)
 end
+
+def sortResultsByAlphabetical
+  sortList = MenuResults.new(@browser)
+  sortList.sortByAlphabetical
+  sortList.orderByAlphabetical
+end

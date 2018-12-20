@@ -38,3 +38,9 @@ Feature: Use the website to find restaurants
       Given I have searched for food in "Victoria Street, Beaconsfield 2015"
       When I filter the results by open now
       Then I should only see open restaurants
+
+      @wip
+    Scenario: Filter search results alphabetically
+      Given I have searched for food in "Victoria Street, Beaconsfield 2015"
+      When I sort the results by alphabetical order
+      Then the results should be sorted alphabetically

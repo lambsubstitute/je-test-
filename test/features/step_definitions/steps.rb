@@ -52,3 +52,11 @@ Given(/^I search for food in a location there are no restaurants$/) do
   fillInAreaCode('Curlew Street, Marla SA, Australia')
   searchForFood
 end
+
+When(/^I sort the results by alphabetical order$/) do
+  sortResultsByAlphabetical
+end
+
+Then(/^the results should be sorted alphabetically$/) do
+  sleep 10000
+end
